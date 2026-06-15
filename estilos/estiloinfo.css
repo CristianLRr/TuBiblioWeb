@@ -1,0 +1,96 @@
+
+
+body{
+    background-color: seashell;
+    line-height: 1.6; 
+}
+.general{
+    text-align: left;
+    padding: 20px;
+    margin-left: 3vw;
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.horariomovil{
+  width: 90%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  display: none;
+}
+.horario{
+  width: 80%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+.horario th, .horario td ,.horariomovil th, .horariomovil td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  width: 12.5%;
+}
+.horario th, .horariomovil th {
+  background-color: #f2f2f2;
+  color: black;
+}
+.horario thead td ,.horariomovil thead td {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+.horario tbody td:first-child, .horariomovil tbody td{
+  background-color: orange;
+  font-weight: bold;
+  color: white;
+}
+.horario tbody tr:nth-child(2) td:first-child{
+  background-color: aliceblue;
+  font-weight: bold;
+  color: black;
+}
+
+.horario tbody td.green, .horariomovil tbody td.green{
+  background-color: green;
+}
+.horario tbody td.red, .horariomovil tbody td.red{
+  background-color: red;
+}
+
+.cabeza{
+margin-bottom: 1em;
+}
+
+
+.row{
+    display: flex;
+    margin: 5vw;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+  .img{
+    width: 30%;
+  }
+  .txt{
+    width: 35%;
+  }
+@media (max-width: 710px) {
+      .txt{
+        width: 100%;
+      }
+      .img{
+        width: 100%;
+        align-items: center;
+      }
+      .row{
+        display: block;
+      }
+      .horario{
+       display: none;
+      }
+      .horariomovil{
+        display: block;
+       }
+}

@@ -1,0 +1,165 @@
+
+
+body{
+    background-color: seashell;
+}
+.general{
+    text-align: left;
+    padding: 20px; 
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.izquierda {
+    width: 20%; 
+    float: left;
+}
+
+.derecha {
+    width: 70%; 
+    text-align: left;
+    float: right;
+     } 
+.listalibros{
+    list-style: none;
+}
+.estiloli{
+    padding-left: 0px;
+    padding-top: 2em;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    width: 100%;
+    display: table;
+    clear: both;
+}
+
+.izq{
+    float: left;
+    width: 15%;
+}
+.der{
+    overflow: hidden;
+    padding-left: 1.5em;
+    width: 50%;
+}
+.der a,
+.der a{
+  text-decoration: none;
+  color: #252850;
+}
+.img{
+    width: 8vw;
+}
+
+.cabeza{
+margin-bottom: 1em;
+}
+.sinopsis{
+margin-bottom: 0;
+margin-left: 0;
+margin-right: 0;
+}
+
+
+
+#menuhorizontal a:hover{
+    color: green;
+}
+
+
+#filtrosmovil{
+    background-color: #ffb552;
+    width: 0;
+    height: 100%;
+    position: fixed;
+    overflow-y: auto; 
+    left: 0;
+    top: 0;
+    color: white;
+    margin-top: 80px;
+}
+#filtrosmovil a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+#desplegar{
+    display: none;
+
+}
+
+  #menupc a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: .15em .25em;
+  }
+  #mostrar{
+    display:block;
+    padding: 0.5vw 1vw;
+    font-size: 2vw;
+    height: 7vh;;
+    width: 30vw;
+    background-color: #ec6b06;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    margin: 0px 20px;
+      }    
+      #mostrar:hover{
+        background-color: darkorange;
+    }
+
+@media (max-width: 710px) {
+    #menupc {
+        background-color: #ffb552;
+        width: 0;
+        height: 100%;
+        position: fixed;
+        overflow-y: auto; 
+        left: 0;
+        top: 0;
+        color: white;
+        margin-top: 80px;
+    }
+    #menumovil{
+        display: block;
+    }
+    #desplegar {
+        display:block;
+        padding: 0.5vw 1vw;
+        font-size: 3vw;
+        height: 6vh;;
+        width: 30vw;
+        background-color: #ec6b06;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+        margin: 0px 20px;
+    }
+
+    .izquierda {
+        float: none;
+        display: none;
+    }
+    .derecha {
+        width: 100%;
+        margin-right: 10px;
+    }
+    .img{
+        width: 20vw;
+    }
+    .der{
+        margin-left: 20vw;
+        width: 80%;
+    }
+      #mostrar{
+        font-size: 3vw;
+      }
+}
